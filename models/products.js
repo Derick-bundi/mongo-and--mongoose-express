@@ -3,7 +3,8 @@ const mongoose = require('mongoose')
 const productSchema = new mongoose.Schema({
     name: {
         type: String,
-        required:true
+       lowercase: true,
+        required: true
     },
 
     price: {
@@ -15,7 +16,9 @@ const productSchema = new mongoose.Schema({
     category: {
         type: String,
         lowercase:true,
-        enum: ['fruit','vegatable','dairy']
+        // enum: ['fruit', 'vegatable', 'dairy']
+            enum: ['fruit', 'vegetable', 'dairy']  // only these values are allowed
+
 
     },
     
