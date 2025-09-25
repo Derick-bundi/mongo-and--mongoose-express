@@ -18,8 +18,6 @@ const productSchema = new mongoose.Schema({
         lowercase:true,
         // enum: ['fruit', 'vegatable', 'dairy']
             enum: ['fruit', 'vegetable', 'dairy']  // only these values are allowed
-
-
     },
     
 })
